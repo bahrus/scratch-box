@@ -4,6 +4,8 @@ const mainTemplate = createTemplate(/* html */ `
 <style>
     :host{
         display:block;
+        background-color: HSL(250, 22%, 41%);
+        padding: 5vw;
     }
     @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
     .checkbox-wrapper {
