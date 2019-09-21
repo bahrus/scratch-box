@@ -21,7 +21,7 @@ To use from CDN:
         <style>
                 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
             </style>
-        <script type="module" src="https://cdn.pika.dev/scratch-box"></script>
+        <script type="module" src="https://unpkg.com/scratch-box@0.0.2/scratch-box.js?module"></script>
     </div>
 ```
 
@@ -47,3 +47,29 @@ or
 Or
 
 > npm install -s scratch-box
+
+[Demo](https://jsfiddle.net/bahrus/7e4j60w5/)
+
+<!--
+```
+<custom-element-demo>
+<template>
+    <div>
+        <scratch-box>
+            <span slot=labelTxt>Create demo</span>
+        </scratch-box>
+        <scratch-box>
+            <span slot=labelTxt>Write article</span>
+        </scratch-box>
+        <scratch-box>
+            <span slot=labelTxt>Excercise</span>
+        </scratch-box>
+        <style>
+                @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+            </style>
+        <script type="module" src="https://cdn.pika.dev/scratch-box"></script>
+    </div>
+</template>
+</custom-element-demo>
+```
+-->
