@@ -1,7 +1,6 @@
-import {define} from 'trans-render/define.js';
-import {createTemplate} from 'xtal-element/utils.js';
-
-const mainTemplate = createTemplate(/* html */`
+import { define } from 'trans-render/define.js';
+import { createTemplate } from 'xtal-element/utils.js';
+const mainTemplate = createTemplate(/* html */ `
 <style>
     :host{
         display:block;
@@ -75,13 +74,12 @@ input[type="checkbox"]:focus ~ label {
   </label>
 </div>
 `);
-
-export class ScratchBox extends HTMLElement{
-    static get is(){return 'scratch-box';}
-    constructor(){
+export class ScratchBox extends HTMLElement {
+    static get is() { return 'scratch-box'; }
+    constructor() {
         super();
-        const shadowRoot = this.attachShadow({mode: "open"});
+        const shadowRoot = this.attachShadow({ mode: "open" });
         shadowRoot.appendChild(mainTemplate.content.cloneNode(true));
-      }
+    }
 }
 define(ScratchBox);

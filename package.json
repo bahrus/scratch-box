@@ -4,11 +4,20 @@
   "description": "TBD",
   "main": "scratch-box.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node node_modules/xtal-test/serve.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bahrus/scratch-box.git"
+  },
+  "dependencies": {
+    "trans-render": "0.0.131",
+    "xtal-element": "0.0.83",
+    "es-module-shims": "0.4.5"
+  },
+  "devDependencies": {
+    "xtal-test": "0.0.20"
   },
   "author": "",
   "license": "MIT",
