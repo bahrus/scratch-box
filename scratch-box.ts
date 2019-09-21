@@ -1,12 +1,12 @@
-import {define} from 'trans-render/define.js';
-import {createTemplate} from 'xtal-element/utils.js';
+import { define } from "trans-render/define.js";
+import { createTemplate } from "xtal-element/utils.js";
 
-const mainTemplate = createTemplate(/* html */`
+const mainTemplate = createTemplate(/* html */ `
 <style>
     :host{
         display:block;
         background-color: HSL(250, 22%, 41%);
-        padding: 5vw;
+        padding: 1vw;
     }
     .checkbox-wrapper {
   position: relative;
@@ -77,12 +77,14 @@ input[type="checkbox"]:focus ~ label {
 </div>
 `);
 
-export class ScratchBox extends HTMLElement{
-    static get is(){return 'scratch-box';}
-    constructor(){
-        super();
-        const shadowRoot = this.attachShadow({mode: "open"});
-        shadowRoot.appendChild(mainTemplate.content.cloneNode(true));
-      }
+export class ScratchBox extends HTMLElement {
+  static get is() {
+    return "scratch-box";
+  }
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: "open" });
+    shadowRoot.appendChild(mainTemplate.content.cloneNode(true));
+  }
 }
 define(ScratchBox);
