@@ -13,11 +13,11 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "trans-render": "0.0.142",
+    "trans-render": "0.0.143",
     "xtal-element": "0.0.101"
   },
   "devDependencies": {
-    "xtal-test": "0.0.41",
+    "xtal-test": "0.0.44",
     "es-module-shims": "0.4.6"
   },
   "author": "",
