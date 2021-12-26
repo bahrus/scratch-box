@@ -23,19 +23,17 @@
             <span slot=labelTxt>Excercise</span>
         </scratch-box>
 
-        <!-- Use experimental import maps -->
-        <script defer src="../node_modules/es-module-shims/dist/es-module-shims.js"></script>
-        <script type="importmap-shim">
-    {
-      "imports": {
-        "xtal-element/": "../node_modules/xtal-element/",
-        "trans-render/": "../node_modules/trans-render/"
-      }
-    }
-    </script>
-        <script type="module-shim">
-        import '../scratch-box.js';
-    </script>
+        <script type=importmap>
+        {
+            "imports": {
+                "trans-render/": "../node_modules/trans-render/",
+                "be-loaded/": "../node_modules/be-loaded/"
+            }
+        }
+        </script>
+        <script type=module>
+            import '../scratch-box.js';
+        </script>
     </div>
 </body>
 

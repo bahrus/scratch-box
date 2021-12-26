@@ -1,13 +1,16 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"module":"esnext",
+		"target": "ESNext",
+		"module":"ESNext",
 		"sourceMap": false,
 		"experimentalDecorators": true,
 		"newLine": "LF",
 		"strict": true,
 		"watch": true
 	},
+	"files":[
+		"scratch-box.ts"
+	],
 	"exclude":[
 		"build",
 		"bower_components",
