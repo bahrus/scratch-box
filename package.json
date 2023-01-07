@@ -6,18 +6,22 @@
   "module": "scratch-box.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node node_modules/xtal-test/serve.js"
+    "package-check": "package-check",
+    "serve": "node node_modules/may-it-serve/serve.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "trans-render": "0.0.441",
-    "be-loaded": "0.0.26"
+    "trans-render": "0.0.657",
+    "xtal-element": "0.0.549",
+    "be-importing": "0.0.52",
+    "be-definitive": "0.0.88"
   },
   "devDependencies": {
-    "xtal-test": "0.0.54"
+    "@skypack/package-check": "0.2.2",
+    "may-it-serve": "0.0.4"
   },
   "author": "",
   "license": "MIT",
