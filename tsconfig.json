@@ -9,11 +9,9 @@
 		"watch": true
 	},
 	"files":[
-		"scratch-box.ts"
+		"make.ts"
 	],
 	"exclude":[
-		"build",
-		"bower_components",
 		"node_modules"
 	]
 
