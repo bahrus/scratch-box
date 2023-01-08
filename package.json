@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "trans-render": "0.0.658",
-    "xtal-element": "0.0.549",
-    "be-headed": "0.0.2",
-    "be-importing": "0.0.52",
-    "be-definitive": "0.0.88"
+    "xtal-element": "0.0.550",
+    "be-headed": "0.0.3",
+    "be-importing": "0.0.53",
+    "be-definitive": "0.0.89"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
