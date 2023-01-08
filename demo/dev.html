@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-    </style>
+
 </head>
 
 <body>
     <div>
-        <scratch-box>
+        <scratch-box be-importing=search-box/root.html>
             <span slot=labelTxt>Create demo</span>
         </scratch-box>
         <scratch-box>
@@ -24,15 +22,28 @@
         </scratch-box>
 
         <script type=importmap>
-        {
-            "imports": {
-                "trans-render/": "../node_modules/trans-render/",
-                "be-loaded/": "../node_modules/be-loaded/"
+            {
+                "imports": {
+                    "be-based/": "../node_modules/be-based/",
+                    "be-decorated/": "../node_modules/be-decorated/",
+                    "be-definitive/": "../node_modules/be-definitive/",
+                    "be-exportable/": "../node_modules/be-exportable/",
+                    "be-having/": "../node_modules/be-having/",
+                    "be-headed/": "../node_modules/be-headed/",
+                    "be-hive/": "../node_modules/be-hive/",
+                    "be-importing/": "../node_modules/be-importing/",
+                    "be-one-and-only/": "../node_modules/be-one-and-only/",
+                    "be-written/": "../node_modules/be-written/",
+                    "stream-orator/": "../node_modules/stream-orator/",
+                    "trans-render/": "../node_modules/trans-render/",
+                    "xtal-element/": "../node_modules/xtal-element/",
+                    "search-box/": "../"
+                }
             }
-        }
         </script>
+
         <script type=module>
-            import '../scratch-box.js';
+            import 'be-importing/be-importing.js';
         </script>
     </div>
 </body>
