@@ -11,6 +11,14 @@ export const make = {
             config:{
                 propDefaults: {
                     value: false
+                },
+                propInfo: {
+                    value: {
+                        notify:{
+                            dispatch: true,
+                            toFormValue: true,
+                        }
+                    }
                 }
             }
         } as BeDefEUP<EndUserProps & TemplMgmtProps, TemplMgmtActions>
