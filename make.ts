@@ -1,3 +1,4 @@
+import {EndUserProps as BeBndEUP} from 'be-bound/types';
 import {EndUserProps as BeDefEUP} from 'be-definitive/types';
 import {EndUserProps as BeHeadedEUP} from 'be-headed/types';
 import {beCloned, beMounted, TemplMgmtProps, TemplMgmtActions, } from 'trans-render/lib/mixins/TemplMgmt.js';
@@ -7,8 +8,20 @@ export const make = {
     ":host": {
         be: 'definitive',
         having: {
-
+            config:{
+                propDefaults: {
+                    value: false
+                }
+            }
         } as BeDefEUP<EndUserProps & TemplMgmtProps, TemplMgmtActions>
+    },
+    input: {
+        be: 'bound',
+        having: {
+            propBindings: [
+                ["checked", "value"]
+            ]
+        } as BeBndEUP
     },
     template: {
         be: 'headed',

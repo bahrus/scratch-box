@@ -1,7 +1,21 @@
 export const make = {
     ":host": {
         be: 'definitive',
-        having: {}
+        having: {
+            config: {
+                propDefaults: {
+                    value: false
+                }
+            }
+        }
+    },
+    input: {
+        be: 'bound',
+        having: {
+            propBindings: [
+                ["checked", "value"]
+            ]
+        }
     },
     template: {
         be: 'headed',

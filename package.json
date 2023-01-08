@@ -14,11 +14,12 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "trans-render": "0.0.658",
-    "xtal-element": "0.0.550",
+    "be-bound": "0.0.4",
+    "be-definitive": "0.0.89",
     "be-headed": "0.0.3",
     "be-importing": "0.0.53",
-    "be-definitive": "0.0.89"
+    "trans-render": "0.0.658",
+    "xtal-element": "0.0.550"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
