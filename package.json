@@ -2,8 +2,8 @@
   "name": "scratch-box",
   "version": "0.0.4",
   "description": "Web component wrapper around custom animated checkbox (from codepen)",
-  "main": "scratch-box.js",
-  "module": "scratch-box.js",
+  "main": "make.js",
+  "module": "make.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "package-check": "package-check",
