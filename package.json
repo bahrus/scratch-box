@@ -14,18 +14,16 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "be-bound": "0.0.4",
-    "be-definitive": "0.0.89",
-    "be-headed": "0.0.3",
-    "be-importing": "0.0.53",
-    "trans-render": "0.0.658",
-    "xtal-element": "0.0.550"
+    "be-definitive": "0.0.105",
+    "be-importing": "0.0.64",
+    "be-it": "0.0.12",
+    "trans-render": "0.0.693",
+    "xtal-element": "0.0.571"
   },
   "devDependencies": {
-    "@skypack/package-check": "0.2.2",
-    "may-it-serve": "0.0.4"
+    "may-it-serve": "0.0.5"
   },
-  "author": "",
+  "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/scratch-box/issues"
