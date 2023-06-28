@@ -6,7 +6,6 @@
 		"experimentalDecorators": true,
 		"newLine": "LF",
 		"strict": true,
-		"watch": true
 	},
 	"files":[
 		"make.ts"
