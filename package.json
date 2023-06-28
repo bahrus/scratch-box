@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "be-definitive": "0.0.105",
+    "be-enhanced": "0.0.33",
+    "be-hive": "0.0.110",
     "be-importing": "0.0.64",
-    "be-it": "0.0.12",
+    "be-it": "0.0.13",
     "trans-render": "0.0.693",
     "xtal-element": "0.0.571"
   },
