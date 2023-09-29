@@ -89,7 +89,9 @@
         </style>
         <form itemscope class="checkbox-wrapper">
             <!--  length of the path is 270px -->
-            <input name=isChecked type="checkbox" id="option" be-bound='[["checked", "value"]]'/>
+            <input name=isChecked type="checkbox" id="option" be-bound='{
+                "propBindings": [["checked", "value"]]
+            }'/>
             <link itemprop=value>
             <label for="option">
                 <slot name="labelTxt">test</slot>
