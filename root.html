@@ -89,9 +89,7 @@
         </style>
         <form itemscope class="checkbox-wrapper">
             <!--  length of the path is 270px -->
-            <input name=isChecked type="checkbox" id="option" be-bound='{
-                "propBindings": [["checked", "value"]]
-            }'/>
+            <input name=value type="checkbox" id="option" be-bound/>
             <link itemprop=value>
             <label for="option">
                 <slot name="labelTxt">test</slot>
@@ -101,7 +99,6 @@
         <template be-active>
             <script data-version="0.0.14" id=be-bound/be-bound.js></script>
             <script data-version="0.0.111" id=be-definitive/be-definitive.js></script>
-            <script data-version="0.0.1" id=be-pute/be-pute.js></script>
             <link rel=stylesheet href=https://fonts.googleapis.com/css?family=Indie+Flower>
         </template>
         <be-hive enh-by-be-definitive='{
