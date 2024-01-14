@@ -20,8 +20,8 @@
     "be-hive": "0.0.131",
     "be-importing": "0.0.69",
     "be-propagating": "0.0.30",
-    "trans-render": "0.0.728",
-    "xtal-element": "0.0.585"
+    "trans-render": "0.0.729",
+    "xtal-element": "0.0.586"
   },
   "devDependencies": {
     "may-it-serve": "0.0.6"
