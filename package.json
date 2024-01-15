@@ -1,6 +1,6 @@
 {
   "name": "scratch-box",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Web component wrapper around custom animated checkbox (from codepen)",
   "main": "make.js",
   "module": "make.js",
