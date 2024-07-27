@@ -1,0 +1,6 @@
+{
+    "explorer.fileNesting.patterns": {
+        "*.mjs": "${capture}.html"
+    },
+    "explorer.fileNesting.enabled": true
+}

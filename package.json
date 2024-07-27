@@ -15,15 +15,15 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "be-bound": "0.0.23",
-    "be-enhanced": "0.0.61",
-    "be-hive": "0.0.132",
-    "be-importing": "0.0.71",
-    "trans-render": "0.0.730",
-    "xtal-element": "0.0.587"
+    "be-bound": "0.0.29",
+    "be-enhanced": "0.0.116",
+    "be-hive": "0.0.196",
+    "be-importing": "0.0.89",
+    "trans-render": "0.0.803",
+    "xtal-element": "0.0.612"
   },
   "devDependencies": {
-    "may-it-serve": "0.0.6"
+    "may-it-serve": "0.0.8"
   },
   "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
