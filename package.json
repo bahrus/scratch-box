@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package-check": "package-check",
     "serve": "node node_modules/may-it-serve/serve.js",
-    "update": "ncu -u && npm install"
+    "update": "ncu -u && npm install",
+    "watch": "npm-watch",
+    "build": "powershell -command \"node root.mjs | out-file  -encoding  oem root.html\""
   },
   "repository": {
     "type": "git",
