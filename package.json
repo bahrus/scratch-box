@@ -6,10 +6,8 @@
   "module": "make.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package-check": "package-check",
-    "serve": "node node_modules/may-it-serve/serve.js",
+    "serve": "node ./node_modules/spa-ssi/serve.js",
     "update": "ncu -u && npm install",
-    "watch": "npm-watch",
     "build": "powershell -command \"node root.mjs | out-file  -encoding  oem root.html\""
   },
   "repository": {
@@ -17,17 +15,18 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "be-bound": "0.0.29",
-    "be-enhanced": "0.0.116",
-    "be-hive": "0.0.196",
-    "be-importing": "0.0.89",
-    "trans-render": "0.0.803",
-    "xtal-element": "0.0.612"
+    "be-bound": "0.0.38",
+    "be-enhanced": "0.0.188",
+    "be-hive": "0.0.266",
+    "be-importing": "0.0.99",
+    "trans-render": "0.0.959",
+    "xtal-element": "0.0.633"
   },
   "devDependencies": {
-    "may-it-serve": "0.0.8"
+    "spa-ssi": "0.0.23",
+    "@playwright/test": "1.55.1"
   },
-  "author": "anderson.bruce.b@gmail.com",
+  "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/scratch-box/issues"
