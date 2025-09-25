@@ -96,10 +96,10 @@ const mainTemplate = String.raw `
 </scratch-box>
 `;
 
-/** @type {XForm<AP, Actions & Localizer>} */
-export const xform = {
+// /** @type {XForm<AP, Actions & Localizer>} */
+// export const xform = {
 
-};
+// };
 
 /** @type {Partial<{[key in keyof AP]: PropInfo}>} */
 export const propInfo = {
@@ -113,7 +113,7 @@ export const propInfo = {
 /** @type {XAP<AP, Actions>} */
 export const xap = {
     mainTemplate,
-    xform,
+    //xform,
     propInfo,
     formAss: true,
 };
