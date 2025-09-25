@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node ./node_modules/spa-ssi/serve.js",
     "update": "ncu -u && npm install",
-    "build": "powershell -command \"node root.mjs | out-file  -encoding  oem root.html\""
+    "build": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\""
   },
   "repository": {
     "type": "git",
