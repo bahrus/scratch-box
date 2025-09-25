@@ -6,6 +6,11 @@ import { makeXtalElement } from 'be-importing/makeXtalElement.mjs';
 /** @import {Actions as A, PropInfo, Compacts} from './ts-refs/trans-render/froop/types.d.ts' */
 /** @import {EndUserProps as XAP} from './ts-refs/xtal-element/types' */
 
+
+/**
+ * @type {keyof AP}
+ */
+const value = 'value';
 const mainTemplate = String.raw `
 <scratch-box>
     <template shadowrootmode=open><!--begin--><!--begin-->
@@ -79,7 +84,7 @@ const mainTemplate = String.raw `
         </style>
         <form itemscope class="checkbox-wrapper">
             <!--  length of the path is 270px -->
-            <input 🪢 name=value type="checkbox" id="option"/>
+            <input 🪢 name=${value} type="checkbox" id="option"/>
             <link itemprop=value>
             <label for="option">
                 <slot name="labelTxt">test</slot>
@@ -100,7 +105,7 @@ const mainTemplate = String.raw `
 
 /** @type {Partial<{[key in keyof AP]: PropInfo}>} */
 export const propInfo = {
-    value: {
+    [value]: {
         type: 'Boolean',
         attrName: 'value',
         parse: true,
