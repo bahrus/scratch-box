@@ -90,16 +90,12 @@ const mainTemplate = String.raw `
             <script type=module>
                 import 'be-bound/🪢.js';
             </script>
-            <link rel=stylesheet href=https://fonts.googleapis.com/css?family=Indie+Flower>
+            <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Indie+Flower">
         </template>
     <!--end--><!--end--></template>
 </scratch-box>
 `;
 
-// /** @type {XForm<AP, Actions & Localizer>} */
-// export const xform = {
-
-// };
 
 /** @type {Partial<{[key in keyof AP]: PropInfo}>} */
 export const propInfo = {
@@ -113,7 +109,6 @@ export const propInfo = {
 /** @type {XAP<AP, Actions>} */
 export const xap = {
     mainTemplate,
-    //xform,
     propInfo,
     formAss: true,
 };
