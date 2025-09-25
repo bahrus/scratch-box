@@ -3,7 +3,7 @@ import { makeXtalElement } from 'be-importing/makeXtalElement.mjs';
 /** @import {Localizer} from "./node_modules/trans-render/lib/mixins/types" */
 /** @import {XForm} from "./ts-refs/trans-render/types.d.ts" */
 /** @import {Actions, AP, EndUserProps} from "./types" */
-/** @import {Actions as A, PropInfo, Compacts} from './ts-refs/trans-render/froop/types.d.ts' */
+/** @import {Actions as A, PropInfo, Compacts, WCConfig} from './ts-refs/trans-render/froop/types.d.ts' */
 /** @import {EndUserProps as XAP} from './ts-refs/xtal-element/types' */
 
 
@@ -105,14 +105,14 @@ const mainTemplate = String.raw `
 
 /** @type {Partial<{[key in keyof AP]: PropInfo}>} */
 export const propInfo = {
-    [value]: {
+    value: {
         type: 'Boolean',
         attrName: 'value',
         parse: true,
     }
 };
 
-/** @type {XAP<AP, Actions>} */
+/** @type {XAP<AP & WCConfig<AP>, Actions>} */
 export const xap = {
     mainTemplate,
     propInfo,
