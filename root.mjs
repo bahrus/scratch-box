@@ -1,9 +1,9 @@
 // @ts-check
 import { makeXtalElement } from 'be-importing/makeXtalElement.mjs';
 /** @import {Localizer} from "./node_modules/trans-render/lib/mixins/types" */
-/** @import {XForm} from "./node_modules/trans-render/types" */
+/** @import {XForm} from "./ts-refs/trans-render/types.d.ts" */
 /** @import {Actions, AP, EndUserProps} from "./types" */
-/** @import {Actions as A, PropInfo} from './node_modules/trans-render/froop/types' */
+/** @import {Actions as A, PropInfo, Compacts} from './ts-refs/trans-render/froop/types.d.ts' */
 /** @import {EndUserProps as XAP} from './node_modules/xtal-element/types' */
 
 const mainTemplate = String.raw `
@@ -140,5 +140,11 @@ export const xap = {
     formAss: true,
 };
 
-makeXtalElement(xap);
+export function render(){
+    /** @type {string[]} */
+    const pieces = [];
+    makeXtalElement(xap, s => pieces.push(s));
+    return pieces.join('');
+}
+
 

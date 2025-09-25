@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>Dev</title>
+    <!-- #include virtual="/imports.html" -->
 </head>
 
 <body>
     <div>
-        <scratch-box enh-by-be-importing=scratch-box/root.html>
+        <scratch-box enh-be-importing=scratch-box/root.mjs>
             <span slot=labelTxt>Create demo</span>
         </scratch-box>
         <scratch-box>
@@ -21,28 +21,7 @@
             <span slot=labelTxt>Excercise</span>
         </scratch-box>
 
-        <script type=importmap>
-            {
-                "imports": {
-                    "be-a-beacon/": "../node_modules/be-a-beacon/",
-                    "be-based/": "../node_modules/be-based/",
-                    "be-bound/": "../node_modules/be-bound/",
-                    "be-enhanced/": "../node_modules/be-enhanced/",
-                    "be-exportable/": "../node_modules/be-exportable/",
-                    "be-hive/": "../node_modules/be-hive/",
-                    "be-importing/": "../node_modules/be-importing/",
-                    "be-linked/": "../node_modules/be-linked/",
-                    "be-propagating/": "../node_modules/be-propagating/",
-                    "be-written/": "../node_modules/be-written/",
-                    "blow-dry/": "../node_modules/blow-dry/",
-                    "mount-observer/": "../node_modules/mount-observer/",
-                    "stream-orator/": "../node_modules/stream-orator/",
-                    "trans-render/": "../node_modules/trans-render/",
-                    "xtal-element/": "../node_modules/xtal-element/",
-                    "scratch-box/": "../"
-                }
-            }
-        </script>
+
 
         <script type=module>
             import 'be-importing/index.js';
