@@ -11,18 +11,20 @@
 
 <body>
     <form>
-        <fieldset disabled>
+        <fieldset disabled name=tasks>
             <scratch-box enh-be-importing=scratch-box/root.mjs>
-                <label slot=label data-for={{createDemo}}>Create demo</label>
                 <input data-id="{{@ createDemo}}" type=checkbox>
+                <label slot=label data-for={{createDemo}}>Create demo</label>
             </scratch-box>
             <scratch-box  name=writeArticle>
-                <label slot=label data-for={{writeArticle}}>Write article</label>
                 <input data-id="{{@ writeArticle}}" type=checkbox>
+                <label slot=label data-for={{writeArticle}}>Write article</label>
+                
             </scratch-box>
             <scratch-box>
-                <label data-for={{exercise}} slot=label>Exercise</label>
-                <input -id data-id="{{@ exercise}}" type=checkbox>
+                <input data-id="{{@ exercise}}" type=checkbox>
+                <label -id data-for={{exercise}} slot=label>Exercise</label>
+                
             </scratch-box>
         </fieldset>
 
