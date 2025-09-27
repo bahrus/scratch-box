@@ -116,7 +116,7 @@ export const propInfo = {
 export const xap = {
     mainTemplate,
     propInfo,
-    formAss: true,
+    fa: true,
 };
 
 export function render(){
