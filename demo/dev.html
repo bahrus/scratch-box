@@ -14,21 +14,27 @@
         <fieldset disabled name=tasks>
             <div be-gone="when scratch-box defined, after ">
                 <label>
-                    <input be-gone-transfer="name and value to #{{@ createDemo}}" type=checkbox>
-                    <span be-gone-insert="into #{{createDemo}}" data-slot=labelTxt>Create demo</span>
+                    <input data-id="{{@ createDemo}}" type=checkbox>
+                    Create demo
                 </label>
                 <label>
-                    <input be-gone-transfer="name and value to #{{@ writeArticle}}" type=checkbox>
-                    <span be-gone-insert="into #{{writeArticle}}" data-slot=labelTxt>Write article</span>
+                    <input data-id="{{@ writeArticle}}" type=checkbox>
+                    Write article
                 </label>
                 <label>
-                    <input be-gone-transfer="name and value to #{{@ exercise}}" type=checkbox>
-                    <span be-gone-insert="into #{{exercise}}" data-slot=labelTxt>Exercise</span>
+                    <input data-id="{{@ exercise}}" type=checkbox>
+                    Exercise
                 </label>
             </div>
-            <scratch-box data-id="{{createDemo}}" enh-be-importing=scratch-box/root.mjs></scratch-box>
-            <scratch-box data-id="{{writeArticle}}"></scratch-box>
-            <scratch-box data-id="{{exercise}}"></scratch-box>
+            <scratch-box enh-ab-sorb="name and value from #{{createDemo}}" enh-be-importing=scratch-box/root.mjs>
+                <span slot=labelTxt ab-sorb="tbd from #{{createDemo}}"></span>
+            </scratch-box>
+            <scratch-box enh-ab-sorb="name and value from #{{writeArticle}}">
+                <span slot=labelTxt ab-sorb="tbd from #{{writeArticle}}"></span>
+            </scratch-box>
+            <scratch-box enh-ab-sorb="name and value from #{{exercise}}">
+                <span slot=labelTxt ab-sorb="tbd from #{{exercise}}"></span>
+            </scratch-box>
         </fieldset>
 
     </form>
