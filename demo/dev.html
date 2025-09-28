@@ -12,28 +12,26 @@
 <body>
     <form>
         <fieldset disabled name=tasks>
-            <div be-gone="when scratch-box defined">
+            <scratch-box enh-ab-sorb="name and value from #{{createDemo}}" enh-be-importing=scratch-box/root.mjs>
                 <label>
                     <input data-id="{{@ createDemo}}" type=checkbox>
                     Create demo
                 </label>
+                <span slot=labelTxt ab-sorb="textContent from #{{createDemo}}?.nextElement"></span>
+            </scratch-box>
+            <scratch-box enh-ab-sorb="name and value from #{{writeArticle}}">
                 <label>
                     <input data-id="{{@ writeArticle}}" type=checkbox>
                     Write article
                 </label>
+                <span slot=labelTxt ab-sorb="textContent from #{{writeArticle}}?.nextElement"></span>
+            </scratch-box>
+            <scratch-box enh-ab-sorb="name and value from #{{exercise}}">
                 <label>
                     <input data-id="{{@ exercise}}" type=checkbox>
                     Exercise
                 </label>
-            </div>
-            <scratch-box enh-ab-sorb="name and value from #{{createDemo}}" enh-be-importing=scratch-box/root.mjs>
-                <span slot=labelTxt ab-sorb="textContent from #{{createDemo}}?.nextElement"></span>
-            </scratch-box>
-            <scratch-box enh-ab-sorb="name and value from #{{writeArticle}}">
-                <span slot=labelTxt ab-sorb="textContent from #{{writeArticle}}?.nextElement"></span>
-            </scratch-box>
-            <scratch-box enh-ab-sorb="name and value from #{{exercise}}">
-                <span slot=labelTxt ab-sorb="textContent from #{{exercise}}?.nextElement"></span>
+                <span -id slot=labelTxt ab-sorb="textContent from #{{exercise}}?.nextElement"></span>
             </scratch-box>
         </fieldset>
 
