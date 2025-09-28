@@ -11,15 +11,21 @@
 
 <body>
     <form>
-        <fieldset disabled name=tasks>
-            <scratch-box enh-ab-sorb="name and value from #{{createDemo}}" enh-be-importing=scratch-box/root.mjs>
-                <label for={{createDemo}}>Create demo<label>
+        <fieldset itemscope disabled name=tasks>
+            <scratch-box enh-ab-sorb="
+                #{{createDemo}}?.name.
+                #{{createDemo}}?.checked to ?.value" 
+                enh-be-importing=scratch-box/root.mjs>
+                <label data-id="{{| createDemoLabel}}">Create demo<label>
                 <input data-id="{{@ createDemo}}" type=checkbox>
                     
-                <span slot=labelTxt ab-sorb="textContent from #{{createDemo}}?.nextElement"></span>
+                <span slot=labelTxt ab-sorb="
+                    #{{createDemoLabel}}?.textContent.
+                    #{{createDemoLabel}}?.itemprop.
+                "></span>
             </scratch-box>
             <scratch-box disabled enh-ab-sorb="
-                #{{writeArticle}}?.name to ?.name.
+                #{{writeArticle}}?.name.
                 #{{writeArticle}}?.checked to ?.value.
                 ">
                 <label>
