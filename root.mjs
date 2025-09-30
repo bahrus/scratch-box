@@ -114,7 +114,7 @@ export const propInfo = {
         type: 'String',
         attrName: 'name',
         parse: true,
-        
+        reflect: true,
     },
 };
 
