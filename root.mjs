@@ -109,7 +109,13 @@ export const propInfo = {
         type: 'Boolean',
         attrName: 'value',
         parse: true,
-    }
+    },
+    name: {
+        type: 'String',
+        attrName: 'name',
+        parse: true,
+        
+    },
 };
 
 /** @type {XAP<AP & WCConfig<AP>, Actions>} */
