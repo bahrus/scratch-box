@@ -12,34 +12,40 @@
 <body>
     <form>
         <fieldset itemscope disabled name=tasks>
-            <scratch-box enh-ab-sorb="
-                #{{createDemo}}?.name.
-                #{{createDemo}}?.checked to ?.value" 
+            <scratch-box defer-enh-soak-up enh-soak-up="
+                name, checked as value
+                from #{{createDemo}}
+            "
                 enh-be-importing=scratch-box/root.mjs>
-                <label data-id="{{| createDemoLabel}}">Create demo<label>
+
+                <!-- These temporary elements serve as functional stand-in elements while web component loads-->
+                <label data-id="{{| createDemoLabel}}">Create demo</label>
                 <input data-id="{{@ createDemo}}" type=checkbox>
+                <!-- End of temporary elements -->
                     
-                <span slot=labelTxt ab-sorb="
-                    #{{createDemoLabel}}?.textContent.
-                    #{{createDemoLabel}}?.itemprop.
+                <span slot=labelTxt defer-soak-up soak-up="
+                    textContent, itemprop
+                        from #{{createDemoLabel}}.
                 "></span>
             </scratch-box>
-            <scratch-box disabled enh-ab-sorb="
-                #{{writeArticle}}?.name.
-                #{{writeArticle}}?.checked to ?.value.
+            <scratch-box defer-enh-soak-up disabled enh-soak-up="
+                name, checked as value
+                from #{{writeArticle}}
                 ">
-                <label>
-                    <input data-id="{{@ writeArticle}}" type=checkbox>
-                    Write article
-                </label>
-                <span slot=labelTxt ab-sorb="textContent from #{{writeArticle}}?.nextElement"></span>
+                <label data-id="{{| writeArticleLabel}}">Write article</label>
+                <input data-id="{{@ writeArticle}}" type=checkbox>
+                
+                <span slot=labelTxt defer-soak-up soak-up="
+                textContent, itemprop 
+                from #{{writeArticleLabel}}"></span>
             </scratch-box>
-            <scratch-box enh-ab-sorb="name and value from #{{exercise}}">
-                <label>
-                    <input data-id="{{@ exercise}}" type=checkbox>
-                    Exercise
-                </label>
-                <span -id slot=labelTxt ab-sorb="textContent from #{{exercise}}?.nextElement"></span>
+            <scratch-box defer-enh-soak-up enh-soak-up="
+                name, checked as value 
+                from #{{exercise}}">
+                <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
+                <input data-id="{{@ exercise}}" type=checkbox>
+                <span -id slot=labelTxt defer-soak-up soak-up="
+                    textContent, itemprop from #{{exerciseLabel}}"></span>
             </scratch-box>
         </fieldset>
 
@@ -48,6 +54,8 @@
 
     <script type=module>
         import 'be-importing/index.js';
+        import 'mount-observer/refid/itemprops.js';
+        import 'soak-up/emc.js';
     </script>
 </body>
 
