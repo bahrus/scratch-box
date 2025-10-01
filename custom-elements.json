@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "",
+      "declarations": [
+        {
+          "name": "ScratchBoxInfo",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "value"
+            },
+            {
+              "kind": "field",
+              "name": "name"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value"
+            },
+            {
+              "name": "name"
+            }
+          ],
+          "cssParts": [],
+          "slots": [],
+          "events": []
+        }
+      ]
+    }
+  ]
+}

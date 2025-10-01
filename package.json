@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node ./node_modules/spa-ssi/serve.js",
+    "build-manifest": "node doc.mjs > custom-elements.json",
     "update": "ncu -u && npm install",
     "build": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
     "safari": "npx playwright wk http://localhost:8000"
@@ -22,11 +23,12 @@
     "be-importing": "0.0.99",
     "blow-dry": "0.0.12",
     "mount-observer": "0.0.105",
-    "soak-up": "0.0.2",
+    "soak-up": "0.0.3",
     "trans-render": "0.0.960",
     "xtal-element": "0.0.633"
   },
   "devDependencies": {
+    "may-it-be": "0.0.181",
     "spa-ssi": "0.0.23",
     "@playwright/test": "1.55.1"
   },

@@ -20,7 +20,7 @@
                 enh-be-importing=scratch-box/root.mjs>
 
                 <!-- These temporary elements serve as functional stand-in elements while web component loads-->
-                <label data-id="{{| createDemoLabel}}">Create demo</label>
+                <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
                 <input data-id="{{@ createDemo}}" type=checkbox>
                 <!-- End of temporary elements -->
                     
@@ -33,7 +33,7 @@
                 name, checked as value
                 from #{{writeArticle}}
                 ">
-                <label data-id="{{| writeArticleLabel}}">Write article</label>
+                <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
                 <input data-id="{{@ writeArticle}}" type=checkbox>
                 
                 <span slot=labelTxt defer-soak-up soak-up="
