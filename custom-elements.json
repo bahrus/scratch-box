@@ -12,19 +12,23 @@
           "members": [
             {
               "kind": "field",
-              "name": "value"
+              "name": "value",
+              "description": "The value of the checkbox, that gets submitted with the form."
             },
             {
               "kind": "field",
-              "name": "name"
+              "name": "name",
+              "description": "Name of the checkbox, that gets submitted with the form."
             }
           ],
           "attributes": [
             {
-              "name": "value"
+              "name": "value",
+              "description": "The value of the checkbox, that gets submitted with the form."
             },
             {
-              "name": "name"
+              "name": "name",
+              "description": "Name of the checkbox, that gets submitted with the form."
             }
           ],
           "cssParts": [],

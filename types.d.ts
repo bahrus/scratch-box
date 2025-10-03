@@ -1,7 +1,13 @@
 import {SimpleWCInfo} from './ts-refs/wc-info/SimpleWCInfo';
 
 export interface EndUserProps{
+    /**
+     * The value of the checkbox, that gets submitted with the form.
+     */
     value: boolean;
+    /**
+     * Name of the checkbox, that gets submitted with the form.
+     */
     name: string;
 }
 
