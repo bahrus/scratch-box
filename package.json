@@ -18,17 +18,17 @@
   },
   "dependencies": {
     "be-bound": "0.0.38",
-    "be-enhanced": "0.0.188",
-    "be-hive": "0.0.266",
-    "be-importing": "0.0.99",
-    "blow-dry": "0.0.12",
+    "be-enhanced": "0.0.189",
+    "be-hive": "0.0.267",
+    "be-importing": "0.0.101",
+    "blow-dry": "0.0.14",
     "mount-observer": "0.0.105",
     "soak-up": "0.0.3",
     "trans-render": "0.0.960",
-    "xtal-element": "0.0.633"
+    "xtal-element": "0.0.635"
   },
   "devDependencies": {
-    "wc-info": "0.0.167",
+    "wc-info": "0.0.171",
     "spa-ssi": "0.0.23",
     "@playwright/test": "1.55.1"
   },
