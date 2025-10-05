@@ -9,7 +9,8 @@
     "serve": "node ./node_modules/spa-ssi/serve.js",
     "build-manifest": "node doc.mjs > custom-elements.json",
     "update": "ncu -u && npm install",
-    "build": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
+    "build-html": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
+    "build": "npm run build-html & npm run build-manifest",
     "safari": "npx playwright wk http://localhost:8000"
   },
   "repository": {
