@@ -39,7 +39,12 @@
             }
           ],
           "cssParts": [],
-          "slots": [],
+          "slots": [
+            {
+              "name": "label-txt",
+              "description": "The label to show with the checkbox."
+            }
+          ],
           "events": []
         }
       ]

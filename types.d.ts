@@ -25,7 +25,9 @@ export abstract class ScratchBoxInfo implements SimpleWCInfo {
     description: 'scratch-box is a web component wrapper around the ["CUSTOM ANIMATED CHECKBOXES" codepen](https://codepen.io/SaraSoueidan/pen/40433575e3d0d026c7d9c00eb45522a1?editors=1100) by Sara Soueidan';
     homepage: 'https://github.com/bahrus/scratch-box'; 
     license: 'MIT'; 
-
+    slots: {
+        labelTxt: 'The label to show with the checkbox.'
+     }; 
 }
 
 export type Package = [ScratchBoxInfo]

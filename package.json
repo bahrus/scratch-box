@@ -29,7 +29,7 @@
     "xtal-element": "0.0.635"
   },
   "devDependencies": {
-    "wc-info": "0.0.183",
+    "wc-info": "0.0.184",
     "spa-ssi": "0.0.23",
     "@playwright/test": "1.56.0"
   },
