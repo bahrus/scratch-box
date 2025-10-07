@@ -14,12 +14,18 @@
             {
               "kind": "field",
               "name": "value",
-              "description": "The value of the checkbox, that gets submitted with the form."
+              "description": "The value of the checkbox, that gets submitted with the form.",
+              "type": {
+                "text": "boolean"
+              }
             },
             {
               "kind": "field",
               "name": "name",
-              "description": "Name of the checkbox, that gets submitted with the form."
+              "description": "Name of the checkbox, that gets submitted with the form.",
+              "type": {
+                "text": "string"
+              }
             }
           ],
           "attributes": [

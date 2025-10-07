@@ -29,9 +29,9 @@
     "xtal-element": "0.0.635"
   },
   "devDependencies": {
-    "wc-info": "0.0.171",
+    "wc-info": "0.0.183",
     "spa-ssi": "0.0.23",
-    "@playwright/test": "1.55.1"
+    "@playwright/test": "1.56.0"
   },
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
   "license": "MIT",
