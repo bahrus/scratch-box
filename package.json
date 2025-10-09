@@ -9,6 +9,7 @@
     "serve": "node ./node_modules/spa-ssi/serve.js",
     "build-manifest": "node doc.mjs > custom-elements.json",
     "update": "ncu -u && npm install",
+    "build-webtypes": "node node_modules/cem-to-web-types-converter/CEMToWebTypesConverter.js custom-elements.json web-types.json",
     "build-html": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
     "build": "npm run build-html & npm run build-manifest",
     "safari": "npx playwright wk http://localhost:8000"
@@ -31,7 +32,7 @@
   "devDependencies": {
     "wc-info": "0.0.185",
     "spa-ssi": "0.0.23",
-    "cem-to-web-types-converter": "0.0.0",
+    "cem-to-web-types-converter": "0.0.2",
     "@playwright/test": "1.56.0"
   },
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
