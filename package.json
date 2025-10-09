@@ -29,8 +29,9 @@
     "xtal-element": "0.0.635"
   },
   "devDependencies": {
-    "wc-info": "0.0.184",
+    "wc-info": "0.0.185",
     "spa-ssi": "0.0.23",
+    "cem-to-web-types-converter": "0.0.0",
     "@playwright/test": "1.56.0"
   },
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
