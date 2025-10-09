@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/web-types",
+  "name": "custom-elements",
+  "version": "1.0.0",
+  "description-markup": "markdown",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "scratch-box",
+          "description": "",
+          "attributes": [
+            {
+              "name": "value",
+              "description": "The value of the checkbox, that gets submitted with the form.",
+              "value": {
+                "type": "any",
+                "required": false
+              }
+            },
+            {
+              "name": "name",
+              "description": "Name of the checkbox, that gets submitted with the form.",
+              "value": {
+                "type": "any",
+                "required": false
+              }
+            }
+          ],
+          "slots": [
+            {
+              "name": "label-txt",
+              "description": "The label to show with the checkbox."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
