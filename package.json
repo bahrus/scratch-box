@@ -11,7 +11,7 @@
     "update": "ncu -u && npm install",
     "build-webtypes": "node node_modules/cem-to-web-types-converter/CEMToWebTypesConverter.js custom-elements.json web-types.json",
     "build-html": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
-    "build": "npm run build-html & npm run build-manifest",
+    "build": "npm run build-html && npm run build-manifest && npm run build-webtypes",
     "safari": "npx playwright wk http://localhost:8000"
   },
   "repository": {
