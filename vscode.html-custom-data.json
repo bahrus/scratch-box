@@ -1,0 +1,20 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "scratch-box",
+      "description": "\n\nSlots: label-txt: The label to show with the checkbox.",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "The value of the checkbox, that gets submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "Name of the checkbox, that gets submitted with the form."
+        }
+      ]
+    }
+  ],
+  "globalAttributes": []
+}
