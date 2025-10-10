@@ -9,9 +9,10 @@
     "serve": "node ./node_modules/spa-ssi/serve.js",
     "build-manifest": "node doc.mjs > custom-elements.json",
     "update": "ncu -u && npm install",
+    "build-vscode-data": "node node_modules/cem-to-vscode-data/cemToVsCodeData.js custom-elements.json vscode.html-custom-data.json",
     "build-webtypes": "node node_modules/cem-to-web-types-converter/CEMToWebTypesConverter.js custom-elements.json web-types.json",
     "build-html": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
-    "build": "npm run build-html && npm run build-manifest && npm run build-webtypes",
+    "build": "npm run build-html && npm run build-manifest && npm run build-webtypes && npm run build-vscode-data",
     "safari": "npx playwright wk http://localhost:8000"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "wc-info": "0.0.185",
     "spa-ssi": "0.0.23",
     "cem-to-web-types-converter": "0.0.2",
+    "cem-to-vscode-data": "0.0.2",
     "@playwright/test": "1.56.0"
   },
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
