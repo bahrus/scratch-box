@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dev</title>
+    <script type="importmap">
+    {
+        "imports": {
+            "scratch-box/": "../"
+        }
+    }
+    </script>
     <!-- #include virtual="/imports.html" -->
 
 </head>
@@ -17,7 +24,7 @@
                 name, checked as value
                 from #{{createDemo}}
             "
-                enh-be-importing=scratch-box/root.mjs>
+                imp-h=scratch-box/root.mjs>
 
                 <!-- These temporary elements serve as functional stand-in elements while web component loads-->
                 <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
@@ -54,7 +61,8 @@
 
 
     <script type=module>
-        import 'be-importing/index.js';
+        import 'imp-h/imp-h.js';
+        import 'xtal-element/index.js';
         import 'mount-observer/refid/itemprops.js';
         import 'soak-up/emc.js';
     </script>

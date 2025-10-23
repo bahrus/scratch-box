@@ -1,5 +1,5 @@
 // @ts-check
-import { makeXtalElement } from 'be-importing/makeXtalElement.mjs';
+import { makeXtalElement } from 'xtal-element/makeXtalElement.mjs';
 /** @import {Localizer} from "./node_modules/trans-render/lib/mixins/types" */
 /** @import {XForm} from "./ts-refs/trans-render/types.d.ts" */
 /** @import {Actions, AP, EndUserProps} from "./types" */
