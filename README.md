@@ -9,67 +9,24 @@ scratch-box is a web component wrapper around the ["CUSTOM ANIMATED CHECKBOXES" 
 To use from CDN:
 
 ```html
-        <scratch-box>
-            <span slot=labelTxt>Create demo</span>
-        </scratch-box>
-        <scratch-box>
-            <span slot=labelTxt>Write article</span>
-        </scratch-box>
-        <scratch-box>
-            <span slot=labelTxt>Excercise</span>
-        </scratch-box>
-        <style>
-                @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-            </style>
-        <script type="module" src="https://unpkg.com/scratch-box@0.0.2/scratch-box.js?module"></script>
-    </div>
+<scratch-box imp-h="scratch-box/root.html">
+    <span slot=labelTxt>Create demo</span>
+</scratch-box>
+<scratch-box>
+    <span slot=labelTxt>Write article</span>
+</scratch-box>
+<scratch-box>
+    <span slot=labelTxt>Excercise</span>
+</scratch-box>
+<script type="importmap">
+{
+    "imports": {
+        "scratch-box/": "https://cdn.jsdelivr.net/npm/scratch-box@0.0.14/",
+        "be-bound/": "https://esm.sh/be-bound@0.0.38/"
+    }
+}
+</script>
+<script type=module src=https://esm.sh/imp-h@0.0.4 crossorigin="anonymous"></script>
+<script type=module src=https://esm.sh/xtal-element@0.0.636/index.js crossorigin=anonymous></script>
 ```
 
-or
-
-```html
-        <scratch-box>
-            <span slot=labelTxt>Create demo</span>
-        </scratch-box>
-        <scratch-box>
-            <span slot=labelTxt>Write article</span>
-        </scratch-box>
-        <scratch-box>
-            <span slot=labelTxt>Excercise</span>
-        </scratch-box>
-        <style>
-                @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-            </style>
-        <script type="module" src="https://cdn.pika.dev/scratch-box"></script>
-    </div>
-```
-
-Or
-
-> npm install -s scratch-box
-
-[Demo](https://jsfiddle.net/bahrus/7e4j60w5/)
-
-<!--
-```
-<custom-element-demo>
-<template>
-    <div>
-        <scratch-box>
-            <span slot=labelTxt>Create demo</span>
-        </scratch-box>
-        <scratch-box>
-            <span slot=labelTxt>Write article</span>
-        </scratch-box>
-        <scratch-box>
-            <span slot=labelTxt>Excercise</span>
-        </scratch-box>
-        <style>
-                @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-            </style>
-        <script type="module" src="https://cdn.pika.dev/scratch-box"></script>
-    </div>
-</template>
-</custom-element-demo>
-```
--->
