@@ -20,16 +20,24 @@
 <body>
     <form>
         <fieldset itemscope disabled name=tasks>
+            <!-- These temporary elements serve as functional stand-in elements while web component loads-->
+            <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
+            <input data-id="{{@ createDemo}}" type=checkbox>
+
+            <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
+            <input data-id="{{@ writeArticle}}" type=checkbox>
+
+            <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
+            <input data-id="{{@ exercise}}" type=checkbox>
+            
+            <!-- End of temporary elements -->
             <scratch-box defer-enh-soak-up enh-soak-up="
                 name, checked as value
                 from #{{createDemo}}
             "
                 imp-h="scratch-box/root.mjs">
 
-                <!-- These temporary elements serve as functional stand-in elements while web component loads-->
-                <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
-                <input data-id="{{@ createDemo}}" type=checkbox>
-                <!-- End of temporary elements -->
+
                     
                 <span slot=labelTxt defer-soak-up soak-up="
                     textContent, itemprop
@@ -40,9 +48,7 @@
                 name, checked as value
                 from #{{writeArticle}}
                 ">
-                <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
-                <input data-id="{{@ writeArticle}}" type=checkbox>
-                
+
                 <span slot=labelTxt defer-soak-up soak-up="
                 textContent, itemprop 
                 from #{{writeArticleLabel}}"></span>
@@ -50,8 +56,7 @@
             <scratch-box defer-enh-soak-up enh-soak-up="
                 name, checked as value 
                 from #{{exercise}}">
-                <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
-                <input data-id="{{@ exercise}}" type=checkbox>
+
                 <span -id slot=labelTxt defer-soak-up soak-up="
                     textContent, itemprop from #{{exerciseLabel}}"></span>
             </scratch-box>

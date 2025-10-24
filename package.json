@@ -20,7 +20,7 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "be-bound": "0.0.38",
+    "be-bound": "0.0.39",
     "be-enhanced": "0.0.189",
     "be-hive": "0.0.267",
     "blow-dry": "0.0.15",
