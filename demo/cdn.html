@@ -11,7 +11,7 @@
 
 <body>
     <div>
-        <scratch-box>
+        <scratch-box imp-h="scratch-box/root.html">
             <span slot=labelTxt>Create demo</span>
         </scratch-box>
         <scratch-box>
@@ -20,11 +20,17 @@
         <scratch-box>
             <span slot=labelTxt>Excercise</span>
         </scratch-box>
-        <style>
-                @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-            </style>
-        <script type="module" src="https://cdn.pika.dev/scratch-box"></script>
     </div>
+    <script type="importmap">
+    {
+        "imports": {
+            "scratch-box/": "https://cdn.jsdelivr.net/npm/scratch-box@0.0.14/",
+            "be-bound/": "https://esm.sh/be-bound@0.0.38/"
+        }
+    }
+    </script>
+    <script type=module src=https://esm.sh/imp-h@0.0.4 crossorigin="anonymous"></script>
+    <script type=module src=https://esm.sh/xtal-element@0.0.636/index.js crossorigin=anonymous></script>
 </body>
 
 </html>
