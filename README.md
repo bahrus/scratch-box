@@ -16,7 +16,7 @@ To use from CDN:
     <span slot=labelTxt>Write article</span>
 </scratch-box>
 <scratch-box>
-    <span slot=labelTxt>Excercise</span>
+    <span slot=labelTxt>Exercise</span>
 </scratch-box>
 <script type="importmap">
 {
