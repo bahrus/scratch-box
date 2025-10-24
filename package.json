@@ -28,7 +28,7 @@
     "mount-observer": "0.0.105",
     "soak-up": "0.0.3",
     "trans-render": "0.0.960",
-    "xtal-element": "0.0.636"
+    "xtal-element": "0.0.637"
   },
   "devDependencies": {
     "wc-info": "0.0.185",
