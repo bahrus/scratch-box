@@ -26,16 +26,17 @@
     "blow-dry": "0.0.15",
     "imp-h": "0.0.4",
     "mount-observer": "0.0.105",
-    "soak-up": "0.0.3",
     "trans-render": "0.0.960",
     "xtal-element": "0.0.637"
   },
   "devDependencies": {
-    "wc-info": "0.0.185",
-    "spa-ssi": "0.0.23",
+    "@playwright/test": "1.56.1",
+    "be-gone": "0.0.1",
     "cem-to-web-types-converter": "0.0.2",
     "cem-to-vscode-data": "0.0.2",
-    "@playwright/test": "1.56.1"
+    "soak-up": "0.0.3",
+    "spa-ssi": "0.0.23",
+    "wc-info": "0.0.185"
   },
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
   "license": "MIT",
