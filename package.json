@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",
-    "be-gone": "0.0.1",
+    "be-gone": "0.0.2",
     "cem-to-web-types-converter": "0.0.2",
     "cem-to-vscode-data": "0.0.2",
     "soak-up": "0.0.3",
