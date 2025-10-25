@@ -21,20 +21,26 @@
     <form>
         <fieldset itemscope disabled name=tasks>
             <!-- These temporary elements serve as functional stand-in elements while web component loads-->
-            <div be-gone-when="contents are empty">
+            <div class=stand-in be-gone-when="contents are empty">
                 <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
                 <input data-id="{{@ createDemo}}" type=checkbox>
             </div>
 
-            <div be-gone-when="contents are empty">
+            <div class=stand-in be-gone-when="contents are empty">
                 <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
                 <input data-id="{{@ writeArticle}}" type=checkbox>
             </div>
 
-            <div be-gone-when="contents are empty">
+            <div class=stand-in be-gone-when="contents are empty">
                 <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
                 <input data-id="{{@ exercise}}" type=checkbox>
             </div>
+
+            <style be-gone-when="scratch-box is defined">
+                .stand-in {
+                    height:153.07px;
+                }
+            </style>
 
             
             <!-- End of temporary elements -->
