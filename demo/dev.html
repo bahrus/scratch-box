@@ -21,14 +21,21 @@
     <form>
         <fieldset itemscope disabled name=tasks>
             <!-- These temporary elements serve as functional stand-in elements while web component loads-->
-            <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
-            <input data-id="{{@ createDemo}}" type=checkbox>
+            <div be-gone-when="contents are empty">
+                <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
+                <input data-id="{{@ createDemo}}" type=checkbox>
+            </div>
 
-            <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
-            <input data-id="{{@ writeArticle}}" type=checkbox>
+            <div be-gone-when="contents are empty">
+                <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
+                <input data-id="{{@ writeArticle}}" type=checkbox>
+            </div>
 
-            <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
-            <input data-id="{{@ exercise}}" type=checkbox>
+            <div be-gone-when="contents are empty">
+                <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
+                <input data-id="{{@ exercise}}" type=checkbox>
+            </div>
+
             
             <!-- End of temporary elements -->
             <scratch-box defer-enh-soak-up enh-soak-up="
@@ -66,8 +73,8 @@
 
 
     <script type=module>
-        await import('mount-observer/refid/genIds.js');
         await import('imp-h/imp-h.js');
+        await import('be-gone/emc.js');
         await import('xtal-element/index.js');
         await import('mount-observer/refid/itemprops.js');
         await import('soak-up/emc.js');
