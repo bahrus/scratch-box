@@ -1,8 +1,19 @@
+// @ts-check
+import { makeXtalElement } from 'xtal-element/makeXtalElement.mjs';
+/** @import {Localizer} from "./node_modules/trans-render/lib/mixins/types" */
+/** @import {XForm} from "./ts-refs/trans-render/types.d.ts" */
+/** @import {Actions, AP, EndUserProps} from "../types" */
+/** @import {Actions as A, PropInfo, Compacts, WCConfig} from './ts-refs/trans-render/froop/types.d.ts' */
+/** @import {EndUserProps as XAP} from './ts-refs/xtal-element/types' */
 
 
+/**
+ * @type {keyof AP}
+ */
+const value = 'value';
 const mainTemplate = String.raw `
 <scratch-box>
-    <template shadowrootmode=open><?begin><?begin>
+    <template shadowrootmode=open><!--begin--><!--begin-->
         <style adopt>
             :host[hidden]{
                 display:none;
@@ -87,6 +98,38 @@ const mainTemplate = String.raw `
             </script>
             <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Indie+Flower">
         </template>
-    <?end><?end></template>
+    <!--end--><!--end--></template>
 </scratch-box>
 `;
+
+
+/** @type {Partial<{[key in keyof AP]: PropInfo}>} */
+export const propInfo = {
+    value: {
+        type: 'Boolean',
+        attrName: 'value',
+        parse: true,
+    },
+    name: {
+        type: 'String',
+        attrName: 'name',
+        parse: true,
+        reflect: true,
+    },
+};
+
+/** @type {XAP<AP & WCConfig<AP>, Actions>} */
+export const xap = {
+    mainTemplate,
+    propInfo,
+    fa: true,
+};
+
+export function render(){
+    /** @type {string[]} */
+    const pieces = [];
+    makeXtalElement(xap, s => pieces.push(s));
+    return pieces.join('');
+}
+
+
