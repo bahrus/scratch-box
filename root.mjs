@@ -73,7 +73,7 @@ const mainTemplate = String.raw `
         </style>
         <form itemscope class="checkbox-wrapper">
             <!--  length of the path is 270px -->
-            <input 🪢 name=${value} type="checkbox" id="option"/>
+            <input 🪢 name=value type="checkbox" id="option"/>
             <link itemprop=value>
             <label for="option">
                 <slot name="labelTxt">test</slot>
@@ -91,3 +91,7 @@ const mainTemplate = String.raw `
     <?end><?end></template>
 </scratch-box>
 `;
+
+export function render(){
+    return mainTemplate;
+}
