@@ -23,7 +23,7 @@
     "assign-gingerly": "0.0.72",
     "be-bound": "0.0.41",
     "be-enhanced": "0.0.189",
-    "be-hive": "0.1.15",
+    "be-hive": "0.1.16",
     "blow-dry": "0.0.15",
     "el-maker": "0.0.6",
     "imp-h": "0.0.5",
@@ -36,7 +36,8 @@
     "be-gone": "0.0.5",
     "cem-to-web-types-converter": "0.0.2",
     "cem-to-vscode-data": "0.0.2",
-    "soak-up": "0.0.7",
+    "nested-regex-groups": "0.0.8",
+    "soak-up": "0.0.9",
     "spa-ssi": "0.0.27",
     "wc-info": "0.0.185"
   },
