@@ -20,6 +20,7 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
+    "assign-gingerly": "0.0.71",
     "be-bound": "0.0.41",
     "be-enhanced": "0.0.189",
     "be-hive": "0.1.15",
@@ -31,7 +32,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",
-    "be-gone": "0.0.2",
+    "be-gone": "0.0.5",
     "cem-to-web-types-converter": "0.0.2",
     "cem-to-vscode-data": "0.0.2",
     "soak-up": "0.0.3",
