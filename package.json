@@ -20,22 +20,22 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "be-bound": "0.0.39",
+    "be-bound": "0.0.41",
     "be-enhanced": "0.0.189",
-    "be-hive": "0.0.267",
+    "be-hive": "0.1.15",
     "blow-dry": "0.0.15",
-    "imp-h": "0.0.4",
-    "mount-observer": "0.0.105",
-    "trans-render": "0.0.960",
+    "imp-h": "0.0.5",
+    "mount-observer": "0.1.43",
+    "trans-render": "0.0.961",
     "xtal-element": "0.0.637"
   },
   "devDependencies": {
-    "@playwright/test": "1.56.1",
+    "@playwright/test": "1.62.1",
     "be-gone": "0.0.2",
     "cem-to-web-types-converter": "0.0.2",
     "cem-to-vscode-data": "0.0.2",
     "soak-up": "0.0.3",
-    "spa-ssi": "0.0.23",
+    "spa-ssi": "0.0.27",
     "wc-info": "0.0.185"
   },
   "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com>",
