@@ -81,7 +81,8 @@ const mainTemplate = String.raw `
             </label>
         </form>
         
-        <!-- <be-hive></be-hive>
+       <be-hive></be-hive>
+        <!-- 
         <template onload=blow-dry-to-head>
             <script type=module>
                 import 'be-bound/🪢.js';
