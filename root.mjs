@@ -2,7 +2,7 @@
 
 const mainTemplate = String.raw `
 <scratch-box>
-    <template shadowrootmode=open><?begin><?begin>
+    <template shadowrootmode=open><?start><?start>
         <style adopt>
             :host[hidden]{
                 display:none;

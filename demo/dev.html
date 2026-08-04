@@ -49,6 +49,20 @@
                     }
                 </style>
             </div>
+            <!-- End of temporary elements -->
+            <scratch-box defer-enh-soak-up enh-soak-up="
+                name, checked as value
+                from #{{createDemo}}
+            "
+                imp-h="scratch-box/root.html">
+
+
+                    
+                <span slot=labelTxt defer-soak-up soak-up="
+                    textContent, itemprop
+                        from #{{createDemoLabel}}.
+                "></span>
+            </scratch-box>
             <remove -id></remove>
         </fieldset>
     </form>
