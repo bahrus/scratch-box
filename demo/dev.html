@@ -20,6 +20,12 @@
 <body>
     <be-hive>
         <script type=emc src="be-gone/emc.json"></script>
+        <script type=emc-parser 
+            src="be-hive/parsers/parse-pattern-statements.js" 
+            parser-name=parse-pattern-statements></script>
+        <script type=emc 
+            src="soak-up/emc.json" 
+            wait-for-parsers=parse-pattern-statements></script>
     </be-hive>
     <form>
         <fieldset style="max-height:488px;overflow:hidden;" itemscope disabled name=tasks>
