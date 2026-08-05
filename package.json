@@ -12,6 +12,7 @@
     "build-vscode-data": "node node_modules/cem-to-vscode-data/cemToVsCodeData.js custom-elements.json vscode.html-custom-data.json",
     "build-webtypes": "node node_modules/cem-to-web-types-converter/CEMToWebTypesConverter.js custom-elements.json web-types.json",
     "build-html": "powershell -command \"node build.mjs | out-file  -encoding  oem root.html\"",
+    "build-features": "node features.mjs > features.json",
     "build": "npm run build-html && npm run build-manifest && npm run build-webtypes && npm run build-vscode-data",
     "safari": "npx playwright wk http://localhost:8000"
   },
@@ -26,7 +27,7 @@
     "be-hive": "0.1.16",
     "blow-dry": "0.0.15",
     "el-maker": "0.0.7",
-    "font-face-feature": "0.0.4",
+    "font-face-feature": "0.0.6",
     "imp-h": "0.0.5",
     "mount-observer": "0.1.46",
     "trans-render": "0.0.961",
