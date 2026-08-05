@@ -33,7 +33,7 @@ const fontFaceFeatureConfig = {
 
             }
         }
-    ]
+    ],
 }
 
 
@@ -44,7 +44,8 @@ const features = {
             customData: {
                 fontFaceFeatureConfig
             }
-        }
+        },
+        templMaker: {}
     }
 
 }
