@@ -36,7 +36,7 @@ const fontFaceFeatureConfig = {
 const features = {
     assignFeatures: {
         fontMgr: {
-            spawn: 'font-face-feature/FontFaceFeature.js',
+            //spawn: 'font-face-feature/FontFaceFeature.js',
             customData: {
                 fontFaceFeatureConfig
             }

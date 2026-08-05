@@ -21,7 +21,7 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "assign-gingerly": "0.0.73",
+    "assign-gingerly": "0.0.75",
     "be-bound": "0.0.42",
     "be-enhanced": "0.0.189",
     "be-hive": "0.1.16",

@@ -1,7 +1,6 @@
 {
     "assignFeatures": {
         "fontMgr": {
-            "spawn": "font-face-feature/FontFaceFeature.js",
             "customData": {
                 "fontFaceFeatureConfig": {
                     "fontFamilies": [
