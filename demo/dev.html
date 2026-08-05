@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo 1</title>
-    <script type="importmap">
-    {
-        "imports": {
-            "scratch-box/": "../"
-        }
-    }
-    </script>
     <!-- #include virtual="/imports.html" -->
     <script type=module>
         import 'be-hive/be-hive.js';
@@ -69,7 +62,7 @@
                     textContent, itemprop 
                     from #{{createDemoLabel}}
                 "></span>
-                <script type=cede data-extends=el-maker></script>
+                <script type=cede data-extends=el-maker src="scratch-box/def.json"></script>
             </scratch-box>
             <remove -id></remove>
         </fieldset>
