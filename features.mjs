@@ -1,5 +1,9 @@
 //@ts-check
 
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
+
 /** @import {FontFaceFeatureConfig} from './types/font-face-feature/types'; */
 
 /**
@@ -49,4 +53,6 @@ export function render() {
     return JSON.stringify(features, null, 4);
 }
 
-console.log(render());
+const __filename = fileURLToPath(import.meta.url);
+const outputFile = __filename.replace(/\.mjs$/, '.json');
+writeFileSync(outputFile, render(), 'utf8');
