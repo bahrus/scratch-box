@@ -27,7 +27,8 @@
     "el-maker": "0.0.7",
     "font-face-feature": "0.0.6",
     "imp-h": "0.0.5",
-    "mount-observer": "0.1.46"
+    "mount-observer": "0.1.46",
+    "templ-maker": "0.0.3"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",

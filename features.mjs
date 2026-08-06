@@ -45,7 +45,7 @@ const features = {
                 fontFaceFeatureConfig
             }
         },
-        templMaker: {}
+        templateMaker: {}
     }
 
 }
