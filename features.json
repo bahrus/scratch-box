@@ -3,6 +3,36 @@
         "roundabout": {
             "customData": {
                 "raConfig": {
+                    "assignOptions": {
+                        "akaMethods": {
+                            "🔍": "querySelector",
+                            "🧺": "querySelectorAll",
+                            "+": "add",
+                            "-": "remove",
+                            "🧬": "cloneNode",
+                            "🔄️": "reset",
+                            "🎯": "closest",
+                            "✅": "matches",
+                            "☑️": "checkValidity",
+                            "📤": "submit",
+                            "🎚️": "toggle",
+                            "📦": "contains",
+                            "🏷️": "setAttribute",
+                            "✂️": "removeAttribute",
+                            "📝": "log",
+                            "⚠️": "warn",
+                            "🚨": "error",
+                            "🤱": "appendChild"
+                        },
+                        "withMethods": [
+                            "appendChild"
+                        ],
+                        "aka": {
+                            "©️": "content?.cloneNode?.true",
+                            "🔤": "textContent",
+                            "🔎": "clone?.querySelector"
+                        }
+                    },
                     "merges": [
                         {
                             "ifKeyIn": [
@@ -17,6 +47,7 @@
                                 "disabled"
                             ],
                             "assign": {
+                                "?.shadowRoot?.🔍?.input?.disabled": "?.disabled",
                                 "?.faceUp?.disabled": "?.disabled"
                             }
                         }

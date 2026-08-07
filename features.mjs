@@ -3,10 +3,11 @@
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
+import {akaMethods, aka, builtInEmoji} from 'assign-gingerly/DX/emojis.js';
 
 /** @import {FontFaceFeatureConfig} from './types/font-face-feature/types'; */
 /** @import {EndUserProps} from './types'; */
-/** @import {RAConfig} from './types/roundabout/types' */
+/** @import {RoundaboutOptions} from './types/roundabout/types' */
 /** @import {ElMakerConfig} from './types/el-maker/types' */
 
 /**
@@ -49,9 +50,18 @@ const fontFaceFeatureConfig = {
 };
 
 /**
- * @type {RAConfig<EndUserProps, EndUserProps, EndUserProps>}
+ * @type {RoundaboutOptions<EndUserProps, EndUserProps, EndUserProps>}
  */
 const raConfig = {
+    assignOptions: {
+        akaMethods,
+        withMethods: ['appendChild'],
+        aka: {
+            ...aka,
+            '🔎': 'clone?.querySelector'
+        },
+        //handlers: builtInEmoji,
+    },
     merges: [
         {
             ifKeyIn: ['value'],
@@ -62,8 +72,8 @@ const raConfig = {
         {
             ifKeyIn: ['disabled'],
             assign: {
+                '?.shadowRoot?.🔍?.input?.disabled': '?.disabled',
                 '?.faceUp?.disabled': '?.disabled'
-
             }
         }
     ]
