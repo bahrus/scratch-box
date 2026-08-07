@@ -82,7 +82,7 @@ const raConfig = {
                 '?.faceUp?.name': '?.name'
             }
         }
-    ]
+    ],
 }
 
 /** @type {ElMakerConfig<EndUserProps>} */
@@ -91,7 +91,12 @@ const features = {
         roundabout: {
             customData: {
                 raConfig
-            }
+            },
+            // withAttrs: {
+            //     name: {
+            //         sourceOfTruth: true,
+            //     }
+            // }
         },
         fontMgr: {
             //spawn: 'font-face-feature/FontFaceFeature.js',
