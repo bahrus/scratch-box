@@ -5,7 +5,7 @@ import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 /** @import {FontFaceFeatureConfig} from './types/font-face-feature/types'; */
-/** @import {EndUserProps} from './types/scratch-box/types'; */
+/** @import {EndUserProps} from './types'; */
 /** @import {RAConfig} from './types/roundabout/types' */
 /** @import {ElMakerConfig} from './types/el-maker/types' */
 
@@ -13,7 +13,9 @@ import { fileURLToPath } from 'url';
  * @type {{ [K in keyof EndUserProps]: K }}
  */
 const props = {
-    value: 'value'
+    value: 'value',
+    name: 'name',
+    disabled: 'disabled',
 };
 
 /**
@@ -50,12 +52,21 @@ const fontFaceFeatureConfig = {
  * @type {RAConfig<EndUserProps, EndUserProps, EndUserProps>}
  */
 const raConfig = {
-    merges: [{
-        ifKeyIn: ['value'],
-        assign: {
-            '?.faceUp?.value': '?.value'
+    merges: [
+        {
+            ifKeyIn: ['value'],
+            assign: {
+                '?.faceUp?.value': '?.value'
+            }
+        },
+        {
+            ifKeyIn: ['disabled'],
+            assign: {
+                '?.faceUp?.disabled': '?.disabled'
+
+            }
         }
-    }]
+    ]
 }
 
 /** @type {ElMakerConfig<EndUserProps>} */

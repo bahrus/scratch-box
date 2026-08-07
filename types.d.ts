@@ -9,6 +9,10 @@ export interface EndUserProps{
      * Name of the checkbox, that gets submitted with the form.
      */
     name: string;
+    /**
+     * Disables the checkbox, preventing user interaction.
+     */
+    disabled: boolean;
 }
 
 export interface AP extends EndUserProps{}

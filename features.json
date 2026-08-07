@@ -11,6 +11,14 @@
                             "assign": {
                                 "?.faceUp?.value": "?.value"
                             }
+                        },
+                        {
+                            "ifKeyIn": [
+                                "disabled"
+                            ],
+                            "assign": {
+                                "?.faceUp?.disabled": "?.disabled"
+                            }
                         }
                     ]
                 }
