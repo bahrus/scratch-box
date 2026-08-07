@@ -50,7 +50,6 @@ const fontFaceFeatureConfig = {
  * @type {RAConfig<EndUserProps, EndUserProps, EndUserProps>}
  */
 const raConfig = {
-    propagate: ['value'],
     merges: [{
         ifKeyIn: ['value'],
         assign: {
