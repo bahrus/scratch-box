@@ -5,6 +5,15 @@ import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 /** @import {FontFaceFeatureConfig} from './types/font-face-feature/types'; */
+/** @import {EndUserProps} from './types/scratch-box/types'; */
+/** @import {RAConfig} from './types/roundabout/types' */
+
+/**
+ * @type {{ [K in keyof EndUserProps]: K }}
+ */
+const props = {
+    value: 'value'
+};
 
 /**
  * @type {FontFaceFeatureConfig}
@@ -36,6 +45,9 @@ const fontFaceFeatureConfig = {
     ],
 };
 
+/**
+ * @type {RAConfig<EndUserProps, EndUserProps, EndUserProps>}
+ */
 const raConfig = {
     propagate: ['value']
 }
