@@ -34,19 +34,30 @@ const fontFaceFeatureConfig = {
             }
         }
     ],
+};
+
+const raConfig = {
+    propagate: ['value']
 }
 
 
 const features = {
     assignFeatures: {
+        roundabout: {
+            customData: {
+                raConfig
+            }
+        },
         fontMgr: {
             //spawn: 'font-face-feature/FontFaceFeature.js',
             customData: {
                 fontFaceFeatureConfig
             }
         },
-        templateMaker: {}
-    }
+        templateMaker: {},
+
+    },
+
 
 }
 
