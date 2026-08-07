@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 /** @import {FontFaceFeatureConfig} from './types/font-face-feature/types'; */
 /** @import {EndUserProps} from './types/scratch-box/types'; */
 /** @import {RAConfig} from './types/roundabout/types' */
+/** @import {ElMakerConfig} from './types/el-maker/types' */
 
 /**
  * @type {{ [K in keyof EndUserProps]: K }}
@@ -52,7 +53,7 @@ const raConfig = {
     propagate: ['value']
 }
 
-
+/** @type {ElMakerConfig<EndUserProps>} */
 const features = {
     assignFeatures: {
         roundabout: {
