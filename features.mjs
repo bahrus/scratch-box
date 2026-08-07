@@ -50,7 +50,13 @@ const fontFaceFeatureConfig = {
  * @type {RAConfig<EndUserProps, EndUserProps, EndUserProps>}
  */
 const raConfig = {
-    propagate: ['value']
+    propagate: ['value'],
+    merges: [{
+        ifKeyIn: ['value'],
+        assign: {
+            '?.faceUp?.value': '?.value'
+        }
+    }]
 }
 
 /** @type {ElMakerConfig<EndUserProps>} */
@@ -68,7 +74,7 @@ const features = {
             }
         },
         templateMaker: {},
-
+        faceUp: {},
     },
 
 

@@ -5,6 +5,16 @@
                 "raConfig": {
                     "propagate": [
                         "value"
+                    ],
+                    "merges": [
+                        {
+                            "ifKeyIn": [
+                                "value"
+                            ],
+                            "assign": {
+                                "?.faceUp?.value": "?.value"
+                            }
+                        }
                     ]
                 }
             }
@@ -35,6 +45,7 @@
                 }
             }
         },
-        "templateMaker": {}
+        "templateMaker": {},
+        "faceUp": {}
     }
 }
