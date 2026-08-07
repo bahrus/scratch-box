@@ -75,6 +75,12 @@ const raConfig = {
                 '?.shadowRoot?.🔍?.input?.disabled': '?.disabled',
                 '?.faceUp?.disabled': '?.disabled'
             }
+        },
+        {
+            ifKeyIn: ['name'],
+            assign: {
+                '?.faceUp?.name': '?.name'
+            }
         }
     ]
 }
