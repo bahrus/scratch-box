@@ -88,15 +88,20 @@ const raConfig = {
 /** @type {ElMakerConfig<EndUserProps>} */
 const features = {
     assignFeatures: {
+        faceUp: {
+            // customData: {
+            //     integrateWithRoundabout: true,
+            // }
+        },
+        truthSourcer: {
+            customData: {
+                observedAttributes: ['name', 'disabled'],
+            }
+        },
         roundabout: {
             customData: {
                 raConfig
             },
-            // withAttrs: {
-            //     name: {
-            //         sourceOfTruth: true,
-            //     }
-            // }
         },
         fontMgr: {
             //spawn: 'font-face-feature/FontFaceFeature.js',
@@ -105,7 +110,7 @@ const features = {
             }
         },
         templateMaker: {},
-        faceUp: {},
+
     },
 
 

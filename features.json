@@ -1,5 +1,14 @@
 {
     "assignFeatures": {
+        "faceUp": {},
+        "truthSourcer": {
+            "customData": {
+                "observedAttributes": [
+                    "name",
+                    "disabled"
+                ]
+            }
+        },
         "roundabout": {
             "customData": {
                 "raConfig": {
@@ -89,7 +98,6 @@
                 }
             }
         },
-        "templateMaker": {},
-        "faceUp": {}
+        "templateMaker": {}
     }
 }
