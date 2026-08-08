@@ -1,4 +1,7 @@
 
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 
 const mainTemplate = String.raw`
 <scratch-box>
@@ -11,6 +14,9 @@ const mainTemplate = String.raw`
                 display:block;
                 background-color: HSL(250, 22%, 41%);
                 padding: 1vw;
+            }
+            :has(input[disabled]){
+                opacity: 0.5;
             }
             .checkbox-wrapper {
                 position: relative;
@@ -110,3 +116,7 @@ const mainTemplate = String.raw`
 export function render() {
     return mainTemplate;
 }
+
+const __filename = fileURLToPath(import.meta.url);
+const outputFile = __filename.replace(/\.mjs$/, '.html');
+writeFileSync(outputFile, render(), 'utf8');

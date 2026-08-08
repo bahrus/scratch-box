@@ -88,11 +88,7 @@ const raConfig = {
 /** @type {ElMakerConfig<EndUserProps>} */
 const features = {
     assignFeatures: {
-        faceUp: {
-            // customData: {
-            //     integrateWithRoundabout: true,
-            // }
-        },
+        faceUp: {},
         truthSourcer: {
             customData: {
                 observedAttributes: ['name', 'disabled'],
