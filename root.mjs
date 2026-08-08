@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const mainTemplate = String.raw`
 <scratch-box>
-    <template shadowrootmode=open shadowrootcustomelementregistryx><?start><?start>
+    <template shadowrootmode=open><?start><?start>
         <style adopt>
             :host[hidden]{
                 display:none;

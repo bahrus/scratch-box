@@ -1,9 +1,7 @@
 {
     "explorer.fileNesting.patterns": {
-        "*.mjs": "${capture}.html"
-    },
-    "files.exclude": {
-        "**/*.html": {"when": "$(basename).mjs"
+        "features.mjs": "features.json",
+        "root.mjs": "root.html"
     },
     "explorer.fileNesting.enabled": true
 }
