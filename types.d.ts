@@ -1,4 +1,4 @@
-import {SimpleWCInfo} from './ts-refs/wc-info/SimpleWCInfo';
+import {SimpleWCInfo} from './types/wc-info/SimpleWCInfo';
 
 export interface EndUserProps{
     /**

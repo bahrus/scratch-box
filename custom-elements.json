@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "2.1.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "",
+      "declarations": [
+        {
+          "tagName": "scratch-box",
+          "name": "ScratchBoxInfo",
+          "customElement": true,
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "description": "The value of the checkbox, that gets submitted with the form.",
+              "type": {
+                "text": "boolean"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "description": "Name of the checkbox, that gets submitted with the form.",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "description": "Disables the checkbox, preventing user interaction.",
+              "type": {
+                "text": "boolean"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "description": "The value of the checkbox, that gets submitted with the form."
+            },
+            {
+              "name": "name",
+              "description": "Name of the checkbox, that gets submitted with the form."
+            },
+            {
+              "name": "disabled",
+              "description": "Disables the checkbox, preventing user interaction."
+            }
+          ],
+          "cssParts": [],
+          "slots": [
+            {
+              "name": "label-txt",
+              "description": "The label to show with the checkbox."
+            }
+          ],
+          "events": []
+        }
+      ]
+    }
+  ]
+}
