@@ -21,12 +21,12 @@
     "url": "git+https://github.com/bahrus/scratch-box.git"
   },
   "dependencies": {
-    "assign-gingerly": "0.0.75",
+    "assign-gingerly": "0.0.76",
     "be-bound": "0.0.42",
     "be-hive": "0.1.16",
     "el-maker": "0.0.9",
     "imp-h": "0.0.5",
-    "mount-observer": "0.1.47"
+    "mount-observer": "0.1.49"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",
