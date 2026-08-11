@@ -79,11 +79,7 @@ const features = {
                 integrateWithRoundabout: true,
             }
         },
-        truthSourcer: {
-            // customData: {
-            //     observedAttributes: ['name', 'disabled'],
-            // }
-        },
+        truthSourcer: {},
         roundabout: {
             customData: {
                 raConfig
