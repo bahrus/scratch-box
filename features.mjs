@@ -54,12 +54,14 @@ const fontFaceFeatureConfig = {
  */
 const raConfig = {
     assignOptions: {
-        akaMethods,
-        withMethods: ['appendChild'],
-        aka: {
-            ...aka,
-            '🔎': 'clone?.querySelector'
+        akaMethods:{
+            '🔍': akaMethods['🔍']
         },
+        //withMethods: ['appendChild'],
+        // aka: {
+        //     '🔍': aka.,
+        //     //'🔎': 'clone?.querySelector'
+        // },
         //handlers: builtInEmoji,
     },
     merges: [
