@@ -26,6 +26,10 @@ To use this web component, the root.html file needs to either be embedded in the
 
 This optional true SSR progressive enhancement support is made possible with the help of two additional, optional element enhancements -- [soak-up](https://www.npmjs.com/package/soak-up) and [be-gone](https://www.npmjs.com/package/be-gone).
 
+## API Reference
+
+View the [custom element manifest for scratch-box](https://wc-info.bahrus.workers.dev/?href=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fscratch-box%400.0.13%2Fcustom-elements.json&stylesheet=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fwc-info%400.0.182%2Fsimple-ce-style.css&embedded=false&tags=&ts=2025-10-07T07%3A54%3A33.702Z&intro=scratch-box+custom+element).
+
 To use from CDN:
 
 ```html
