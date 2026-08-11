@@ -60,28 +60,14 @@ const raConfig = {
             ...aka,
             '🔎': 'clone?.querySelector'
         },
-        //handlers: builtInEmoji,
     },
     merges: [
-        // {
-        //     ifKeyIn: ['value'],
-        //     assign: {
-        //         '?.faceUp?.value': '?.value'
-        //     }
-        // },
         {
             ifKeyIn: ['disabled'],
             assign: {
                 '?.shadowRoot?.🔍?.input?.disabled': '?.disabled',
-                //'?.faceUp?.disabled': '?.disabled'
             }
         },
-        // {
-        //     ifKeyIn: ['name'],
-        //     assign: {
-        //         '?.faceUp?.name': '?.name'
-        //     }
-        // }
     ],
 }
 
