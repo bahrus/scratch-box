@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 2</title>
+    <!-- #include virtual="/imports.html" -->
+    <script type=module>
+        import 'be-hive/be-hive.js';
+        import 'imp-h/imp-h.js';
+        import 'el-maker/def.js';
+    </script>
+</head>
+<body>
+    <be-hive>
+        <script type=emc src="be-gone/emc.json"></script>
+        <script type=emc-parser 
+            src="be-hive/parsers/parse-pattern-statements.js" 
+            parser-name=parse-pattern-statements></script>
+        <script type=emc 
+            src="soak-up/emc.json" 
+            wait-for-parsers=parse-pattern-statements></script>
+    </be-hive>
+    <form>
+        <fieldset style="max-height:488px;overflow:hidden;" itemscope disabled name=tasks>
+            <!-- These temporary elements serve as functional stand-in elements while web component loads-->
+            <div be-gone-when-missing=div>
+                <div class=stand-in be-gone-when-missing="*">
+                    <label data-id="{{| createDemoLabel}}" data-for={{createDemo}}>Create demo</label>
+                    <input data-id="{{@ createDemo}}" type=checkbox>
+                </div>
+
+                <div class=stand-in be-gone-when-missing="*">
+                    <label data-id="{{| writeArticleLabel}}" data-for={{writeArticle}}>Write article</label>
+                    <input data-id="{{@ writeArticle}}" type=checkbox>
+                </div>
+
+                <div class=stand-in be-gone-when-missing="*">
+                    <label data-id="{{| exerciseLabel}}" data-for={{exercise}}>Exercise</label>
+                    <input data-id="{{@ exercise}}" type=checkbox>
+                </div>
+
+                <style be-gone-when-defined="scratch-box">
+                    .stand-in {
+                        height:145px;
+                    }
+                    scratch-box {
+                        display: none;
+                    }
+                </style>
+            </div>
+            <!-- End of temporary elements -->
+            <scratch-box defer-enh-soak-up enh-soak-up="
+                    name, checked as value 
+                    from #{{createDemo}}
+                "
+                imp-h="scratch-box/root.html">
+
+
+                    
+                <span slot=labelTxt defer-soak-up soak-up="
+                    textContent, itemprop 
+                    from #{{createDemoLabel}}
+                "></span>
+                <script type=cede data-extends=el-maker src="scratch-box/features2.json"></script>
+            </scratch-box>
+            <scratch-box defer-enh-soak-up disabled enh-soak-up="
+                name, checked as value
+                from #{{writeArticle}}
+                ">
+
+                <span slot=labelTxt defer-soak-up soak-up="
+                textContent, itemprop 
+                from #{{writeArticleLabel}}"></span>
+            </scratch-box>
+            <scratch-box defer-enh-soak-up enh-soak-up="
+                name, checked as value 
+                from #{{exercise}}">
+
+                <span slot=labelTxt defer-soak-up soak-up="
+                    textContent, itemprop from #{{exerciseLabel}}"></span>
+            </scratch-box>            
+            <remove -id></remove>
+        </fieldset>
+    </form>
+</body>
+</html>
