@@ -18,13 +18,13 @@ This watches for changes to the mjs file and automatically rebuilds the el-maker
 
 ## Dual Mode
 
-The [root.html](/root.html) file mentioned above can actually be opened via a web server, and the basic functionality of the web component can already be demo'd.  All that's missing is some behind the scenes dynamic functionality as far as linking up to an HTML form, and the ability to pass in the checked value dynamically. [TODO -- support passing in via querystring].
+The [root.html](/root.html) file mentioned above can actually be opened via a static file web server, and the basic functionality of the web component can already be demo'd.  Nothing could be easier! All that's missing is some behind the scenes dynamic functionality as far as linking up to an HTML form, and the ability to pass in the checked value dynamically. [TODO -- support passing in via querystring].
 
 ## SSR support
 
-To use this web component, the root.html file needs to either be embedded in the HTML stream for the landing page, or imported in.  In the main [demo page](/demo/DemoCompact.html), we see a full-blown SSR example, including progressing switching from raw checkboxes with minimal styling to the *scratch-box* component, passing any edits made to the raw checkboxes to the *scratch-box* during hydration without skipping a beat.
+To use this web component, the root.html file needs to either be embedded in the HTML stream for the landing page, or (lazily) imported/streamed in.  In the main [demo page](/demo/DemoCompact.html), we see a full-blown SSR example, including progressing switching from raw checkboxes with minimal styling to the *scratch-box* component, passing any edits made to the raw checkboxes to the *scratch-box* during hydration without skipping a beat.
 
-This optional true SSR progress enhancement support is made possible with the help of two additional, optional element enhancements -- [soak-up](https://www.npmjs.com/package/soak-up) and [be-gone](https://www.npmjs.com/package/be-gone).
+This optional true SSR progressive enhancement support is made possible with the help of two additional, optional element enhancements -- [soak-up](https://www.npmjs.com/package/soak-up) and [be-gone](https://www.npmjs.com/package/be-gone).
 
 To use from CDN:
 
