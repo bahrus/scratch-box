@@ -12,7 +12,7 @@
     "build-vscode-data": "node node_modules/cem-to-vscode-data/cemToVsCodeData.js custom-elements.json vscode.html-custom-data.json",
     "build-webtypes": "node node_modules/cem-to-web-types-converter/CEMToWebTypesConverter.js custom-elements.json web-types.json",
     "build-features": "node --watch features.mjs",
-    "build-features2": "node --watch features2.mjs",
+    "build-el-maker": "node --watch el-maker.mjs",
     "build": "npm run build-html && npm run build-manifest && npm run build-webtypes && npm run build-vscode-data",
     "safari": "npx playwright wk http://localhost:8000"
   },

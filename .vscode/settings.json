@@ -1,6 +1,7 @@
 {
     "explorer.fileNesting.patterns": {
         "features.mjs": "features.json",
+        "el-maker.mjs": "el-maker.json",
         "root.mjs": "root.html"
     },
     "explorer.fileNesting.enabled": true
