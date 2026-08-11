@@ -80,9 +80,9 @@ const features = {
             }
         },
         truthSourcer: {
-            customData: {
-                observedAttributes: ['name', 'disabled'],
-            }
+            // customData: {
+            //     observedAttributes: ['name', 'disabled'],
+            // }
         },
         roundabout: {
             customData: {
@@ -90,7 +90,6 @@ const features = {
             },
         },
         fontMgr: {
-            //spawn: 'font-face-feature/FontFaceFeature.js',
             customData: {
                 fontFaceFeatureConfig
             }
