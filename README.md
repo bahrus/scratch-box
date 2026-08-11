@@ -8,7 +8,7 @@ scratch-box is a form associated custom element web component wrapper around the
 
 ## Declarative Custom Element
 
-This is the world's first visual web component, built with [custom element features](https://github.com/bahrus/assign-gingerly#custom-element-features) and [Declarative Custom Element cede scripts](https://github.com/bahrus/mount-observer#custom-element-definition-cede-scripts).  It is "code-free". In particular, it draws from the [el-maker](https://www.npmjs.com/package/el-maker) base class module package, only loading those features that are actually used, as needed.  It is entirely built with a static html file [root.html](/root.html) and a JSON file [el-maker.json](/el-maker.json).  Editing JSON by hand is error-prone and doesn't lend itself to Typescript checking.  So the JSON is built from [el-maker.mjs](/el-maker.mjs) using command
+This is the world's first visual web component, built with [custom element features](https://github.com/bahrus/assign-gingerly#custom-element-features) and [Declarative Custom Element cede scripts](https://github.com/bahrus/mount-observer#custom-element-definition-cede-scripts).  It is "code-free". In particular, it draws from the [el-maker](https://www.npmjs.com/package/el-maker) base class module package, only loading ("dependency injecting") those features that are actually used, as needed.  It is entirely built with a static html file [root.html](/root.html) and a JSON file [el-maker.json](/el-maker.json).  Editing JSON by hand is error-prone and doesn't lend itself to Typescript checking.  To overcome this, the JSON file is built and managed from [el-maker.mjs](/el-maker.mjs) using command:
 
 ```
 npm run build-el-maker
