@@ -3,7 +3,7 @@
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
-import {akaMethods, aka, builtInEmoji} from 'assign-gingerly/DX/emojis.js';
+import {akaMethods as m, aka, builtInEmoji} from 'assign-gingerly/DX/emojis.js';
 
 /** @import {FontFaceFeatureConfig} from './types/font-face-feature/types'; */
 /** @import {EndUserProps} from './types'; */
@@ -54,12 +54,9 @@ const fontFaceFeatureConfig = {
  */
 const raConfig = {
     assignOptions: {
-        akaMethods,
-        withMethods: ['appendChild'],
-        aka: {
-            ...aka,
-            '🔎': 'clone?.querySelector'
-        },
+        akaMethods: {
+            '🔍': m['🔍']
+        }
     },
     merges: [
         {

@@ -57,12 +57,6 @@ const raConfig = {
         akaMethods:{
             '🔍': akaMethods['🔍']
         },
-        //withMethods: ['appendChild'],
-        // aka: {
-        //     '🔍': aka.,
-        //     //'🔎': 'clone?.querySelector'
-        // },
-        //handlers: builtInEmoji,
     },
     merges: [
         {
