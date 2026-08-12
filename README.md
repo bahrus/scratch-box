@@ -28,7 +28,7 @@ This optional true SSR progressive enhancement support is made possible with the
 
 ## API Reference
 
-View the [custom element manifest for scratch-box](https://wc-info.bahrus.workers.dev/?href=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fscratch-box%400.0.13%2Fcustom-elements.json&stylesheet=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fwc-info%400.0.182%2Fsimple-ce-style.css&embedded=false&tags=&ts=2025-10-07T07%3A54%3A33.702Z&intro=scratch-box+custom+element).
+View the [custom element manifest for scratch-box](https://wc-info.bahrus.workers.dev/?href=https://cdn.jsdelivr.net/npm/scratch-box@0.0.15/custom-elements.json&stylesheet=https://cdn.jsdelivr.net/npm/wc-info@0.0.182/simple-ce-style.css&embedded=false&tags=&ts=2025-10-07T07:54:33.702Z&intro=scratch-box+custom+element).
 
 To use from CDN:
 
